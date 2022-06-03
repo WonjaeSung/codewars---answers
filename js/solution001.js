@@ -1,6 +1,7 @@
-function last(x){
-    console.log(x.split(' ').reverse())//.sort((a,b)=> b-a))
-
+function getDivisorsCnt(n){
+    let countOfDivisors = 0
+    for (let i = 1; i <= n; i++){
+      if(n%i===0){countOfDivisors+=1}
+    }
+    return countOfDivisors
   }
-
-last('man i need a taxi up to ubud')
